@@ -1,13 +1,14 @@
 import { memo } from "react";
-import { Link } from "react-router-dom";
+import "./style.scss";
 import {FaUserLarge} from 'react-icons/fa6';
 
 const Header = () =>{   
     return (
-    <div className="container">
+    <div className="header__top">
+        <div className="container">
         <div className="row">
             <div className="col-6">trai</div>
-            <div className="col-6 header_top_right">
+            <div className="col-6 header__top_right">
                 <ul>
                     <li>
                         <FaUserLarge/>
@@ -15,6 +16,7 @@ const Header = () =>{
                     </li>
                 </ul>
             </div>
+        </div>
         </div>
     </div>) 
 };
